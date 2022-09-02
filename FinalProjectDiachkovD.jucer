@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="OWs0ZU" name="FinalProjectDiachkovD" projectType="guiapp"
+              displaySplashScreen="1" jucerFormatVersion="1" headerPath="${workspaceFolder}/**"
+              cppLanguageStandard="17">
+  <MAINGROUP id="AmuB0l" name="FinalProjectDiachkovD">
+    <GROUP id="{22880BE7-397F-82B8-7ACD-8D28418887CD}" name="Source">
+      <GROUP id="{35C6C8EE-3EFB-7E9B-3DD5-B1173224E4FA}" name="controls">
+        <FILE id="XHK1nk" name="ControlsComponent.cpp" compile="1" resource="0"
+              file="Source/ControlsComponent.cpp"/>
+        <FILE id="J8JGSJ" name="ControlsComponent.h" compile="0" resource="0"
+              file="Source/ControlsComponent.h"/>
+      </GROUP>
+      <GROUP id="{992BBB6C-E9B5-A763-0455-A932123D0112}" name="players">
+        <FILE id="L4ltbW" name="PlayersComponent.cpp" compile="1" resource="0"
+              file="Source/PlayersComponent.cpp"/>
+        <FILE id="tvGsYu" name="PlayersComponent.h" compile="0" resource="0"
+              file="Source/PlayersComponent.h"/>
+      </GROUP>
+      <GROUP id="{C99A83BC-ABCD-F849-B5B7-42E6497E6EB9}" name="playlist">
+        <FILE id="h5VLT9" name="PlaylistComponent.cpp" compile="1" resource="0"
+              file="Source/PlaylistComponent.cpp"/>
+        <FILE id="PyGAhb" name="PlaylistComponent.h" compile="0" resource="0"
+              file="Source/PlaylistComponent.h"/>
+      </GROUP>
+      <GROUP id="{3F146523-156F-6A8E-434C-1742A9B37CDF}" name="library">
+        <FILE id="t9Mi71" name="LibraryComponent.cpp" compile="1" resource="0"
+              file="Source/LibraryComponent.cpp"/>
+        <FILE id="z97JvD" name="LibraryComponent.h" compile="0" resource="0"
+              file="Source/LibraryComponent.h"/>
+      </GROUP>
+      <FILE id="MFyKCy" name="LayoutComponent.cpp" compile="1" resource="0"
+            file="Source/LayoutComponent.cpp"/>
+      <FILE id="FCVJT1" name="LayoutComponent.h" compile="0" resource="0"
+            file="Source/LayoutComponent.h"/>
+      <FILE id="eiwh1P" name="DJAudioPLayer.cpp" compile="1" resource="0"
+            file="Source/DJAudioPLayer.cpp"/>
+      <FILE id="mNAaEp" name="DJAudioPLayer.h" compile="0" resource="0" file="Source/DJAudioPLayer.h"/>
+      <FILE id="gQ5J4Y" name="WaveformDisplay.cpp" compile="1" resource="0"
+            file="Source/WaveformDisplay.cpp"/>
+      <FILE id="VYP8qQ" name="WaveformDisplay.h" compile="0" resource="0"
+            file="Source/WaveformDisplay.h"/>
+      <FILE id="ttKIdZ" name="CustomGUI.cpp" compile="1" resource="0" file="Source/CustomGUI.cpp"/>
+      <FILE id="BznZRl" name="CustomGUI.h" compile="0" resource="0" file="Source/CustomGUI.h"/>
+      <FILE id="VIqhcG" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+      <FILE id="WfPSWl" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="KDDLEg" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <JUCEOPTIONS JUCE_STRICT_REFCOUNTEDPOINTER="1"/>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="FinalProjectDiachkovD"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="FinalProjectDiachkovD"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+    <VS2022 targetFolder="Builds/VisualStudio2022">
+      <CONFIGURATIONS>
+        <CONFIGURATION isDebug="1" name="Debug" targetName="FinalProjectDiachkovD"/>
+        <CONFIGURATION isDebug="0" name="Release" targetName="FinalProjectDiachkovD"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_audio_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_audio_utils" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_core" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_events" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_graphics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_dsp" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_opengl" path="../../../../../JUCE/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../../../../../JUCE/modules"/>
+      </MODULEPATHS>
+    </VS2022>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULE id="juce_audio_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_devices" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_formats" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_processors" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_audio_utils" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_core" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_cryptography" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_data_structures" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_dsp" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_events" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_graphics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_basics" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_gui_extra" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+    <MODULE id="juce_opengl" showAllCode="1" useLocalCopy="0" useGlobalPath="1"/>
+  </MODULES>
+</JUCERPROJECT>
