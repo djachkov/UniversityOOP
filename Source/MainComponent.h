@@ -4,7 +4,6 @@
 #include "DJAudioPlayer.h"
 #include "CustomGUI.h"
 #include "LayoutComponent.h"
-#include "PlaylistComponent.h"
 
 //==============================================================================
 /*
@@ -31,16 +30,12 @@ private:
     //==============================================================================
     // Your private member variables go here...
      
-    PlaylistComponent playlistComponent;
     AudioFormatManager formatManager;
     AudioThumbnailCache thumbCache{100}; 
 
-    DJAudioPlayer player1{formatManager};
-    CustomGUI deckGUI1{&player1, formatManager, thumbCache}; 
-    LayoutComponent layout; 
-
-    DJAudioPlayer player2{formatManager};
-    CustomGUI deckGUI2{&player2, formatManager, thumbCache}; 
+    Player player1{ formatManager };
+    Player player2{ formatManager };
+    LayoutComponent layout{ &player1, &player2, formatManager, thumbCache };
 
     MixerAudioSource mixerSource; 
     

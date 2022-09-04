@@ -31,11 +31,14 @@ public:
 
     /** set the relative position of the playhead*/
     void setPositionRelative(double pos);
+    void mouseDrag(const MouseEvent& e) override;
+    void setTransportSource(AudioTransportSource* newSource);
+ 
 
 private:
     AudioThumbnail audioThumb;
+    AudioTransportSource* transportSource = nullptr;
     bool fileLoaded; 
     double position;
-    
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (WaveformDisplay)
 };

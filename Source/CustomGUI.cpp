@@ -80,7 +80,6 @@ void CustomGUI::resized()
     speedSlider.setBounds(0, rowH * 3, getWidth(), rowH);
     posSlider.setBounds(0, rowH * 4, getWidth(), rowH);
     waveformDisplay.setBounds(0, rowH * 5, getWidth(), rowH * 2);
-
 }
 
 void CustomGUI::buttonClicked(Button* button)

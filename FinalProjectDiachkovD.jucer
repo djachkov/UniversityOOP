@@ -12,22 +12,24 @@
               file="Source/ControlsComponent.h"/>
       </GROUP>
       <GROUP id="{992BBB6C-E9B5-A763-0455-A932123D0112}" name="players">
+        <FILE id="LIGbqm" name="Player.cpp" compile="1" resource="0" file="Source/Player.cpp"/>
+        <FILE id="izEkuf" name="Player.h" compile="0" resource="0" file="Source/Player.h"/>
+        <FILE id="IY1VsK" name="PlayerGUI.cpp" compile="1" resource="0" file="Source/PlayerGUI.cpp"/>
+        <FILE id="CQPrcm" name="PlayerGUI.h" compile="0" resource="0" file="Source/PlayerGUI.h"/>
         <FILE id="L4ltbW" name="PlayersComponent.cpp" compile="1" resource="0"
               file="Source/PlayersComponent.cpp"/>
         <FILE id="tvGsYu" name="PlayersComponent.h" compile="0" resource="0"
               file="Source/PlayersComponent.h"/>
-      </GROUP>
-      <GROUP id="{C99A83BC-ABCD-F849-B5B7-42E6497E6EB9}" name="playlist">
-        <FILE id="h5VLT9" name="PlaylistComponent.cpp" compile="1" resource="0"
-              file="Source/PlaylistComponent.cpp"/>
-        <FILE id="PyGAhb" name="PlaylistComponent.h" compile="0" resource="0"
-              file="Source/PlaylistComponent.h"/>
       </GROUP>
       <GROUP id="{3F146523-156F-6A8E-434C-1742A9B37CDF}" name="library">
         <FILE id="t9Mi71" name="LibraryComponent.cpp" compile="1" resource="0"
               file="Source/LibraryComponent.cpp"/>
         <FILE id="z97JvD" name="LibraryComponent.h" compile="0" resource="0"
               file="Source/LibraryComponent.h"/>
+        <FILE id="Iqu1gB" name="TrackComponent.cpp" compile="1" resource="0"
+              file="Source/TrackComponent.cpp"/>
+        <FILE id="azhv8W" name="TrackComponent.h" compile="0" resource="0"
+              file="Source/TrackComponent.h"/>
       </GROUP>
       <FILE id="MFyKCy" name="LayoutComponent.cpp" compile="1" resource="0"
             file="Source/LayoutComponent.cpp"/>

@@ -44,7 +44,7 @@ public:
 
 private:
 
-    TextButton playButton{"PLAY"};
+    ArrowButton playButton{"Play", 90.0f, Colours::green};
     TextButton stopButton{"STOP"};
     
   

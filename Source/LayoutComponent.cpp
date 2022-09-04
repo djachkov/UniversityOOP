@@ -12,15 +12,21 @@
 #include "LayoutComponent.h"
 
 //==============================================================================
-LayoutComponent::LayoutComponent()
+LayoutComponent::LayoutComponent(
+    Player* _player1,
+    Player* _player2,
+    AudioFormatManager& formatManagerToUse,
+    AudioThumbnailCache& cacheToUse
+) : 
+    player1(_player1),
+    player2(_player2),
+    cache(cacheToUse), 
+    formatManager(formatManagerToUse)
+
 {
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
-    library.setColour(juce::ResizableWindow::backgroundColourId, Colours::aqua);
-    playlist.setColour(juce::ResizableWindow::backgroundColourId, Colours::brown);
-
     addAndMakeVisible(library);
-    addAndMakeVisible(playlist);
     addAndMakeVisible(players);
     addAndMakeVisible(controls);
 
@@ -55,10 +61,9 @@ void LayoutComponent::resized()
     // This method is where you should set the bounds of any child
     // components that your component contains..
     auto area = getLocalBounds();
-    auto sideWidth = area.getWidth() / 5;
-    auto controlsHeight = area.getHeight() / 5;
-    library.setBounds(area.removeFromLeft(sideWidth));
-    playlist.setBounds(area.removeFromRight(sideWidth));
+    auto column = area.getWidth() / 12;
+    auto controlsHeight = area.getHeight() / 2;
+    library.setBounds(area.removeFromLeft(column * 4));
     controls.setBounds(area.removeFromBottom(controlsHeight));
     players.setBounds(area.removeFromTop(area.getHeight()));
 }

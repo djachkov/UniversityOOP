@@ -11,19 +11,31 @@
 #pragma once
 
 #include <JuceHeader.h>
+#include "Player.h"
 
 //==============================================================================
 /*
 */
-class ControlsComponent  : public juce::Component
+class ControlsComponent  : public juce::Component,
+                           public Slider::Listener
 {
 public:
-    ControlsComponent();
+    ControlsComponent(Player* _player1, Player* _player2);
     ~ControlsComponent() override;
 
     void paint (juce::Graphics&) override;
     void resized() override;
+    void sliderValueChanged(Slider* slider) override;
 
 private:
+    Player* player1;
+    Player* player2;
+
+    Slider volSlider1;
+    Slider speedSlider1;
+    
+    Slider volSlider2;
+    Slider speedSlider2;
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (ControlsComponent)
 };

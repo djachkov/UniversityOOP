@@ -1,4 +1,4 @@
-/*
+ /*
   ==============================================================================
 
     WaveformDisplay.cpp
@@ -21,8 +21,7 @@ WaveformDisplay::WaveformDisplay(AudioFormatManager & 	formatManagerToUse,
 {
     // In your constructor, you should add any child components, and
     // initialise any special settings that your component needs.
-
-  audioThumb.addChangeListener(this);
+    audioThumb.addChangeListener(this);
 }
 
 WaveformDisplay::~WaveformDisplay()
@@ -59,8 +58,8 @@ void WaveformDisplay::paint (Graphics& g)
     else 
     {
       g.setFont (20.0f);
-      g.drawText ("File not loaded...", getLocalBounds(),
-                  Justification::centred, true);   // draw some placeholder text
+      g.drawText ("Select file from library", getLocalBounds(),
+                  Justification::centred, true);
 
     }
 }
@@ -69,7 +68,6 @@ void WaveformDisplay::resized()
 {
     // This method is where you should set the bounds of any child
     // components that your component contains..
-
 }
 
 void WaveformDisplay::loadURL(URL audioURL)
@@ -79,6 +77,7 @@ void WaveformDisplay::loadURL(URL audioURL)
   if (fileLoaded)
   {
     std::cout << "wfd: loaded! " << std::endl;
+    DBG("LOADED");
     repaint();
   }
   else {
@@ -97,7 +96,7 @@ void WaveformDisplay::changeListenerCallback (ChangeBroadcaster *source)
 
 void WaveformDisplay::setPositionRelative(double pos)
 {
-  if (pos != position)
+  if (pos != position && !isnan(pos))
   {
     position = pos;
     repaint();
@@ -105,7 +104,20 @@ void WaveformDisplay::setPositionRelative(double pos)
 
   
 }
+void WaveformDisplay::setTransportSource(AudioTransportSource* newSource)
+{
+    transportSource = newSource;
 
+}
+void WaveformDisplay::mouseDrag(const MouseEvent& e)
+{
+    if (transportSource != nullptr)
+    {
+
+        transportSource->setPosition((jmax(static_cast<double> (e.x), 0.0) / getWidth())
+            * audioThumb.getTotalLength());
+    }
+}
 
 
 
